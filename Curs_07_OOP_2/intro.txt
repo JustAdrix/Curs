@@ -1,0 +1,8 @@
+Programarea Orientata Obiect ( OOP  sau POO in ro ) - se refera la:
+- utilizarea obiectelor ( instante ale unor clase, create de noi sau existente deja ) pentru a dezvolta
+    aplicatii de dimensiuni medi si mari.
+Are 4 principii:
+- Incapsulare ( Encasulation )
+- Mostenire ( Inheritance )
+- Abstractizare ( Abstraction )
+- Polimorfism ( PolYmorphism )
