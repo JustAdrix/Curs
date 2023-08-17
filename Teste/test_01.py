@@ -110,25 +110,25 @@
 # a = Solution()
 # print(a.missingNumber([1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, ], 10))
 
-class Solution:
-    def duplicates(self, arr, n):
-        self.arr = arr
-        self.n = n
-        rezultat = []
-
-        for i in range(self.n):
-            index = abs(self.arr[i])
-
-            if self.arr[index] >= 0:
-                self.arr[index] = -self.arr[index]
-            else:
-                rezultat.append(index)
-        if len(rezultat) == 0:
-             return [-1]
-
-        rezultat.sort()
-        return rezultat
-
-
-p = Solution()
-print(p.duplicates([0, 3, 3, 2, 3, 1, 3, 1, 2, 4, 3, 3, 3], 5))
+# class Solution:
+#     def duplicates(self, arr, n):
+#         self.arr = arr
+#         self.n = n
+#         rezultat = []
+#
+#         for i in range(self.n):
+#             index = abs(self.arr[i])
+#
+#             if self.arr[index] >= 0:
+#                 self.arr[index] = -self.arr[index]
+#             else:
+#                 rezultat.append(index)
+#         if len(rezultat) == 0:
+#              return [-1]
+#
+#         rezultat.sort()
+#         return rezultat
+#
+#
+# p = Solution()
+# print(p.duplicates([0, 3, 3, 2, 3, 1, 3, 1, 2, 4, 3, 3, 3], 5))
