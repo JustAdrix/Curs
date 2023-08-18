@@ -1,3 +1,3 @@
-# Curs si Exercitii #
-# In Python #
+##  Exercitii ##
+ # In Python #
 
