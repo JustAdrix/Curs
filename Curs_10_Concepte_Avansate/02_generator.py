@@ -44,3 +44,22 @@ for i in g2:
     print(i)
 
 print(ske)
+import random
+
+
+def generate_lottery_numbers():
+    for _ in range(6):
+        yield random.randint(1, 49)
+
+    yield random.randint(1000000, 9999999)
+
+
+# Exemplu de utilizare
+lottery_generator = generate_lottery_numbers()
+
+print("Numerele pentru loteria 6/49:")
+for i in range(6):
+    print(f"Apelul {i + 1}: {next(lottery_generator)}")
+
+print("\nNumărul de noroc:")
+print(next(lottery_generator))
