@@ -310,11 +310,11 @@ class Teacher(Person):
         self.id += 'T'
 
 
+
 class Student(Person):
     def __init__(self, id):
         super().__init__(id)
         self.id += 'S'
-
 
 class TeachingAssistant(Student, Teacher):
     def __init__(self, id):
@@ -358,3 +358,4 @@ t = Test()
 t.method1(5)
 t.method2()
 t.display()
+
