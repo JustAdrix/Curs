@@ -1,25 +1,26 @@
-"""
-Json -> JavaScript Object Notation
-     -> seamana cu o lista de dictionare
-     -> foloseste la transfer de date
-"""
+'''
+jason -> Java Script Object Notation
+        -> seamana cu o lista de dictionare
+        -> se foloseste la transfer de date
+'''
 import json
+
 from pprint import pprint
 
 
 def read():
-    with open("Angajati.json", "r") as f:
+    with open("angajati.json", "r") as f:
         return json.load(f)
 
 
 l = read()
 pprint(l)
 
-print("--" * 30)
+print("*" * 40)
 
 
 def write(d):
-    with open("Angajati2.json", "w") as f:
+    with open("angajati2.json", "w", newline="") as f:
         json.dump(d, f, indent=4)
 
 

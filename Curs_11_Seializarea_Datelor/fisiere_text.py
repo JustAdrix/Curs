@@ -1,49 +1,60 @@
-'''
-Serializarea Datelor ->> se doreste persistarea ( salvarea ) datelor din aplicatie pentru a fi
-                        disponibile ii viitor pentru a putea fi citite sau modificate
-'''
+"""
+Serializarea datelor --> se doreste persistarea datelor din aplicatie ptr a fi disponibilein viitor pentru
+                         a putea fi citite sau modificate
+"""
+
 
 # Citire date in mod clasic
+# se foloseste intotdeauna -try - except
 
 def read_clasic():
-    f = open("data.txt", "r") # deschiderea fisierului si retinerea in variabila "f"
+    f = open("date.txt", "r")  # deschiderea fisierului si retinerea lui in variabila "f"
     try:
-        return f.readlines() # citim toate datele din fiser
+        return f.readlines()  # citim toate liniile din fisier
     except Exception as ex:
-        print(f'Error : {ex}')
+        print(f"Error: {ex}")
     finally:
-        f.close() # inchidem fisierul
+        f.close()  # inchidem fisierul
+
 
 l = read_clasic()
 print(l)
 
-print('*'*40)
+print("--" * 30)
 
-# Citire folosind Context Manager
+
+# Citire folosind ContextManager
 
 def read_safe():
-    with open("data.txt", "r") as f:
+    with open("date.txt", "r") as f:
         return f.readlines()
+
 
 l = read_safe()
 print(l)
-print('*'*40)
 
-# Scriere date fisier
-    # Suprascrie tot continutul anterior ( se pierd datele care au fost inainte )
+print("--" * 30)
+
+
+# Scriere date in fisier
+# suprascrie tot continutul anterior (se pierd datele care au fost inainte)
+# datele nu se pot recupera (CTRL+Z in Pycharm pe fisier)
 
 def write():
-    with open("data.txt", "w") as f:
-        f.writelines(["1\n", " abc\n", " 1 2 3\n"])
+    with open("date.txt", "w") as f:
+        f.writelines(["1\n", "abc\n", "1 2 3\n"])
+
 
 write()
 
-print('*'*40)
+print("--" * 30)
+
 
 # Adaugare date in fisier
 
 def append():
-    with open("data.txt", "a") as f:
-        f.writelines(["banane\n", "portocale\n"])
+    with open("date.txt", "a") as f:
+        f.writelines(["banane\n"])
+
 
 append()
