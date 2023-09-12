@@ -1,0 +1,20 @@
+Create a new Django project: Once Django is installed, you can create a new Django project by running the following command:
+ django-admin startproject projectname
+ 
+Create a new Django app: Inside your Django project, you can create a new app by running the following command:
+ python manage.py startapp appname
+ 
+Define your models: In Django, a model is a representation of a database table. You can define your models in the "models.py" file inside your app directory.
+Create database tables: Once you have defined your models, you can create the database tables by running the following command:
+ python manage.py makemigrations appname
+ python manage.py migrate
+ 
+
+ 
+ This will create the necessary migration files and apply them to the database.
+Create views: A view is a function that handles a particular URL pattern. You can define your views in the "views.py" file inside your app directory.
+Define URLs: You need to define the URLs that your app will respond to. You can do this by creating a "urls.py" file inside your app directory and adding your URL patterns.
+Create templates: Templates are HTML files that define the structure and layout of your app's pages. You can create templates inside a "templates" directory inside your app directory.
+Test your app: Finally, you can test your app by running the following command:
+ python manage.py runserver
+ 

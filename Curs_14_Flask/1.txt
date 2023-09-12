@@ -1,0 +1,3 @@
+title,todo,status
+Mancare,Gatit piept de pui,todo
+Curatenie praf,Sters praful in camera,in progress
