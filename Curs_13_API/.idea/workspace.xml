@@ -5,15 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="078f2684-d2d9-4392-a535-2cd5c181046a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Curs_13_REST_API/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Curs_13_REST_API/.idea/Curs_13_API.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Curs_13_REST_API/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Curs_13_REST_API/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Curs_13_REST_API/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Curs_13_REST_API/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Curs_13_REST_API/Flask_App/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exercitii_Extra/test_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercitii_Extra/test_01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Curs_14_Flask/.idea/Curs_14_Flask.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Curs_14_Flask/Task_App/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Curs_14_Flask/Task_App/.idea/Task_App.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Curs_14_Flask/Task_App/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Curs_14_Flask/Task_App/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Curs_14_Flask/Task_App/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Curs_14_Flask/Task_App/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Curs_14_Flask/Task_App/api/tasks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Curs_14_Flask/Task_App/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Curs_14_Flask/Task_App/data/tasks.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Curs_14_Flask/Task_App/model/task.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Curs_14_Flask/Task_App/repository/tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Curs_14_Flask/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Curs_14_Flask/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Curs_14_Flask/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Curs_14_Flask/task.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Curs_14_Flask/tasks (1).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Curs_14_Flask/tasks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Curs_15_Django/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Curs_15_Django/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Curs_15_Django/pet_adoption_agency/pet_adoption_agency/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Curs_15_Django/pet_adoption_agency/pet_adoption_agency/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Curs_15_Django/pet_adoption_agency/pet_adoption_agency/templates/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Curs_15_Django/pet_adoption_agency/pets/templates/error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Curs_15_Django/pet_adoption_agency/pets/templates/all_pets.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Curs_15_Django/pet_adoption_agency/pets/templates/all_pets.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Curs_15_Django/pet_adoption_agency/pets/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Curs_15_Django/pet_adoption_agency/pets/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Curs_15_Django/pet_adoption_agency/pets/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Curs_15_Django/pet_adoption_agency/pets/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,10 +60,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/workspace/Curs/Curs_13_API"
+    "last_opened_file_path": "D:/workspace/Curs/09_WorkShop"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.app">
+  <component name="RunManager" selected="Python.main">
     <configuration name="02_post" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Curs_13_API" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,6 +169,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Curs_13_API" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.app" />
@@ -176,5 +213,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

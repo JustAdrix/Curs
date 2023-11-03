@@ -7,7 +7,7 @@ Create a new Django app: Inside your Django project, you can create a new app by
 Define your models: In Django, a model is a representation of a database table. You can define your models in the "models.py" file inside your app directory.
 Create database tables: Once you have defined your models, you can create the database tables by running the following command:
  python manage.py makemigrations appname
- python manage.py migrate
+ python manage.py migrate ....10:17 PM 9/17/202310:17 PM 9/17/202310:17 PM 9/17/202310:17 PM 9/17/202310:17 PM 9/17/202310:17 PM 9/17/202310:17 PM 9/17/202310:17 PM 9/17/202310:17 PM 9/17/202310:17 PM 9/17/202310:17 PM 9/17/202310:17 PM 9/17/202310:17 PM 9/17/202310:17 PM 9/17/202310:17 PM 9/17/202310:17 PM 9/17/202310:17 PM 9/17/202310:17 PM 9/17/202310:17 PM 9/17/202310:17 PM 9/17/2023
  
 
  
@@ -18,3 +18,135 @@ Create templates: Templates are HTML files that define the structure and layout 
 Test your app: Finally, you can test your app by running the following command:
  python manage.py runserver
  
+S 4
+
+
+Meet IT Factory6:32 PM
+python -m django startproject marketplace
+Meet IT Factory6:35 PM
+python manage.py startapp coffeeshop
+Meet IT Factory6:54 PM
+python manage.py makemigrations
+python manage.py migrate
+Meet IT Factory6:57 PM
+python manage.py createsuperuser
+Meet IT Factory7:07 PM
+admin
+from django.contrib import admin
+from . models import User, Product, Orders, Home
+# Register your models here.
+admin.site.register(User)
+admin.site.register(Product)
+admin.site.register(Orders)
+admin.site.register(Home)
+from django.db import models
+
+
+# Create your models here.
+class User(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField(unique=True)
+
+    def __str__(self):
+        return self.name
+
+class Product(models.Model):
+    name = models.CharField(max_length=100)
+    price = models.DecimalField(max_digits=8, decimal_places=2)
+    description = models.TextField(max_length=500)
+
+    def __str__(self):
+        return self.name
+
+class Orders(models.Model):
+    user = mo
+class Product(models.Model):
+    name = models.CharField(max_length=100)
+    price = models.DecimalField(max_digits=8, decimal_places=2)
+    description = models.TextField(max_length=500)
+
+    def __str__(self):
+        return self.name
+Sabin Marcu7:36 PM
+Marius a intervenit ceva si trebuie sa ma deloghez, sper ca nu e vreo problema
+Meet IT Factory7:54 PM
+from django.urls import path
+from. import views
+
+urlpatterns = [
+    path("users/", views.user_list, name="user_list"),
+    path("products/", views.product_list, name="product_list"),
+    path("orders/", views.order_list, name="order_list"),
+    path('home/', views.home, name='home'),
+]
+Meet IT Factory8:00 PM
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>User List</h2>
+
+    {% for user in users %}
+        <p>{{ user.name }} - {{ user.email }}</p>
+    {% empty %}
+        <p>No users found.</p>
+    {% endfor %}
+{% endblock content %}
+Meet IT Factory8:04 PM
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Products List</h2>
+
+    {% for product in products%}
+        <p>{{ product.name }} - {{ product.price}} - {{ product.description }}</p>
+    {% empty %}
+        <p>No products found.</p>
+    {% endfor %}
+
+{% endblock content %}
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Products List</h2>
+
+    {% for order in orders%}
+        <p>{{ order.user.name}} ordered  {{ order.quantity}} units of {{order.product.name}}</p>
+    {% empty %}
+        <p>No orders found.</p>
+    {% endfor %}
+
+{% endblock content %}
+Meet IT Factory8:18 PM
+<div class="text-center mt-4">
+        <img src="{% static 'cf/bg.jpg' %}" alt="Coffeeshop Background" class="img-fluid">
+    </div>
+Meet IT Factory8:24 PM
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    {% load static %}
+Meet IT Factory8:25 PM
+class Home(models.Model):
+    home = models.TextField(max_length=100)
+
+    def __str__(self):
+        return f"The Coffee Shop"
+path('home/', views.home, name='home'),
+def home(request):
+    home = Home.objects.all()
+    return render(request, 'home.html', {"home": home})
+Meet IT Factory8:27 PM
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Coffee: Fuel for deep thoughts and early mornings.</h2>
+    {% for entry in home %}
+        <p>{{ entry.home }}</p>
+    {% endfor %}
+{% endblock %}
+Meet IT Factory8:28 PM
+<div class="container mt-5">
+        <h1 class="mb-4">{% block title %}Welcome to Marius's Coffeeshop{% endblock title %}</h1>
+        {% block content %}
+        <!-- Conținutul specific fiecărei pagini va fi inserat aici -->
+        {% endblock content %}
+    </div>
+otd-ybfm-pou

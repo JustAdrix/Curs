@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Pets</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
 </head>
 <body>
 {% if pets %}
@@ -14,5 +16,6 @@
         {% endfor %}
     </ul>
 {% endif %}
+{% include 'add_pet_form.html' %}
 </body>
 </html>
